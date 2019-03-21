@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background: url(../../public/images/bg.jpg);
+    background-attachment: fixed;
+    background-position-y: 50%;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 60, 87, 0.795);
+    opacity: .9;
+    color: $textColor;
+}
+.about-site{
+    width: 70%;
+    padding-top: 15%;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}

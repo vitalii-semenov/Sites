@@ -1,0 +1,274 @@
+.about-site{
+    height: 100%;
+    padding: 20% 0 5% 5%;
+}
+.text-content{
+    display: inline-block;
+    width: 650px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: $contentTextColor;
+    line-height: 2;
+    .out-link{
+        cursor: pointer;
+        border-bottom: 0.5px dotted $contentTextColor;
+        &:hover{
+            color: $hoverLink;
+            border: none;
+        }
+    }
+}
+.out-link{
+    cursor: pointer;
+    border-bottom: 0.5px dotted $contentTextColor;
+    &:hover{
+        transition: color 0.5s;
+        color: $hoverLink;
+        border: none;
+    }
+}
+.headers-content{
+    color: $headersColor;
+    font-size: 40px;
+}
+.learn-button{
+    display: inline-block;
+    margin: 5% 50% 5% 0;
+    padding: 20px 40px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $learnButtonColor;
+    border: 0.5px solid rgba(255, 255, 255, 0.356);
+    border-radius: 50px;
+    cursor: pointer;
+    &:hover{
+        border-color: rgba(255, 255, 255, 0.904);   
+        background: rgba(255, 255, 255, 0.055);
+    }
+}
+.new-articles{
+    margin: 0px;
+    padding: 0px;
+    background: rgba(49, 36, 80, 0.9);
+    .news{
+        @include flex(row, flex-start, flex-start, wrap);
+        @include list();
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        .news-li{
+            width: 30%;
+            height: 437px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .short-news{
+            width: 70%;
+            height: 437px;
+            padding: 10% 0 0 5%;
+            margin: 0px;
+            background: linear-gradient(to bottom, rgba(70, 70, 255, 0.404), rgba(87, 87, 238, 0.192));
+        }
+        .news-li:nth-child(1) .img-news{
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 437px;
+            background-image: url(../../public/images/pic01.jpg);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            cursor: pointer;
+        }
+        .news-li:nth-child(3) .img-news{
+            background-image: url(../../public/images/pic02.jpg);
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 437px;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            cursor: pointer;
+        }
+        .news-li:nth-child(5) .img-news{
+            background-image: url(../../public/images/pic03.jpg);
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            height: 437px;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            cursor: pointer;
+        }
+        .headers-content{
+            color: $headersColor;
+            font-size: 30px;
+        }
+        .text-content{
+            display: inline-block;
+            width: 80%;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: $contentTextColor;
+        }
+    }
+}
+.whatwedo{
+    background: #b74e91;
+    margin: 0px;
+    padding: 5%;
+    .headers-content{
+        color: $headersColor;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .text-content{
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        color: $contentTextColor;
+        letter-spacing: 1px;
+    }
+}
+.wedo{
+    @include flex(row, flex-start, flex-start, wrap);
+    @include list();
+    padding-left: 0px;
+    .wedo-li{
+        position: relative;
+        width: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.212);
+        background: rgba(255, 255, 255, 0.048);
+        padding: 5% 5% 5% 15%;
+        .text-content{
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+    }
+}
+.wedo-li::before{
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: #b74e91;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.25em;
+    content: "\f121";
+    width: 2.5em;
+    background: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 2.5em;
+}
+.wedo-li:nth-child(2)::before{
+    content: "\f023";
+}
+.wedo-li:nth-child(3)::before{
+    content: "\f013";
+}
+.wedo-li:nth-child(4)::before{
+    content: "\f108";
+}
+.wedo-li:nth-child(5)::before{
+    content: "\f0c1";
+}
+.wedo-li:nth-child(6)::before{
+    content: "\f3a5";
+}
+.form{
+    @include flex(row, flex-start, flex-start, wrap);
+    background: rgba(94, 64, 165, 1);
+    padding: 5%;
+    .headers-content{
+        color: $headersColor;
+        font-size: 30px;
+    }
+    .text-content{
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        color: $contentTextColor;
+        letter-spacing: 1px;
+    }
+    .form-left{
+        width: 60%;
+        border-right: 0.5px solid rgba(255, 255, 255, 0.438);
+    }
+    .form-right{
+        width: 40%;
+    }
+}
+.form-input{
+    @include flex(row, flex-start, flex-start, wrap);
+    @include list();
+    padding-left: 0px;
+    .headers-content{
+        color: $headersColor;
+        font-size: 20px;
+    }
+    .input-li{
+        width: 50%;
+        padding-right: 20px;
+    }
+    .input-li:last-child{
+        width: 100%;
+    }
+    .input-li:last-child .name{
+        width: 100%;
+        height: 200px;
+    }
+    .name{
+        width: 100%;
+        height: 4em;
+        padding-left: 10px;
+        background: rgba(255, 255, 255, 0.055);
+        border: 0.5px solid rgba(255, 255, 255, 0.438);
+        border-radius: 3px;
+        &:focus{
+            outline: none;
+            border: 2px solid white;
+        }
+    }
+}
+.form-right{
+    padding-left: 5%;
+    .headers-content{
+        color: $headersColor;
+        font-size: 20px;
+    }
+    .text-content{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: $contentTextColor;
+        letter-spacing: 0px;
+    }
+    a:link, a:visited{
+        color: $contentTextColor;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $hoverLink;
+        border: none;
+    }
+    .social{
+        display: inline-block;
+        font-size: 1.2em;
+        padding-right: 10px;
+        cursor: pointer;
+        color: $contentTextColor;
+        &:hover{
+            color: white;
+        }
+    }
+}

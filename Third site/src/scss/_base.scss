@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+main{
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/images/banner.jpg);
+    background-size: cover;
+    &::after{
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background: $bgColor;
+        opacity: 0.8;
+    }
+}

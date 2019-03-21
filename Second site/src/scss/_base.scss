@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+main{
+    nav{
+        height: 100%;
+    }
+}
+.clearfix{
+    clear: both;
+}
+.fix-column{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20%;
+    background: $bgColoMenu;
+    font-size: $fontSizeMenu;
+}
+.content{
+    width: 80%;
+    margin-left: 20%;
+    height: 100%;
+    background: $bgColorContent;
+    background-image: url(../../public/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+footer{
+    width: 80%;
+    height: 100px;
+    margin-left: 20%;
+    background: rgb(73, 51, 130);
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="286" height="48" viewBox="0 0 286 48">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 49px;
+        fill: #f70;
+        font-family: "Lobster 1.4";
+      }
+
+      .cls-2 {
+        fill: #676666;
+      }
+    </style>
+  </defs>
+  <text id="PhotoCage_app" data-name="PhotoCage app" class="cls-1" x="0.001" y="36">Photo<tspan class="cls-2">Cage app</tspan></text>
+</svg>

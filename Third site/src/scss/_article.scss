@@ -1,0 +1,374 @@
+//Media Tablet Start
+/////////////////////
+@media only screen and (max-width : 1023px) {
+    .form-address-li{
+        padding: 2% 5% 5% 23% !important;
+    }
+}
+// Media Tablet End
+////////////////////
+
+//Media Tablet Portret Start
+/////////////////////////////
+@media only screen and (max-width: 771px){
+    .banner{
+        height: 100%;
+        padding: 20% 2% 10% 2% !important;
+    }
+    .content-text{
+        font-size: 12px !important;
+    }
+    .a-item{
+        width: 50% !important;
+        height: 300px !important;
+    }
+    .form{
+        padding-left: 0 !important;
+        .form-input{
+            padding: 0 5% 0 7% !important;
+        }
+    }
+    .form-address-li{
+        padding: 2% 5% 5% 17% !important;
+    }
+    .form-address-li:before{
+        left: 7% !important;
+    }
+    .form-input{
+        width: 100% !important;
+        margin-bottom: 5% !important;
+    }
+    .form-address{
+        width: 100% !important;
+    }
+}
+//Media Tablet Portret End
+///////////////////////////
+
+//Media Mobile Start
+/////////////////////
+@media only screen and (max-width : 480px){
+    .a-item{
+        width: 100% !important;
+        height: 300px !important;
+    }
+    .banner{
+        .content-text{
+            width: 100% !important;
+        }
+        .button{
+            margin: 5% 0 0 0 !important;
+        }
+    }
+    .form-input--li{
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+    .form-address-li{
+        padding: 2% 5% 5% 20% !important;
+    }
+}
+//Media Mobile End
+///////////////////
+
+.banner{
+    position: relative;
+    z-index: 1000;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    padding: 10% 2% 10% 2%;
+    color: $textColor;
+    .content-text{
+        margin-right: 2%;
+    }
+    .button{
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        padding: 10px 30px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        color: $textColor;
+        font-weight: bold;
+        border: 2px solid $textColor;
+        &:hover{
+            transition: .3s;
+            color: $hoverColor;
+            border-color: $hoverColor;
+        }
+    }
+}
+.h1-text{
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $textColor;
+}
+.content-text{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+    padding: 4px;
+    font-size: $fontSize;
+    line-height: 25px;
+    font-weight: 400;
+    color: $textColor;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+.article-items{
+    @include flex(row, flex-start, flex-start, wrap);
+    @include list();
+    padding: 0px;
+    margin: 0px;
+}
+.h2-text{
+    color: $textColor;
+    padding-bottom: 10px;
+    font-size: 30px;
+    width: 200px;
+    border-bottom: 2px solid $textColor;
+}
+.a-item{
+    position: relative;
+    z-index: 3;
+    padding: 7%;
+    height: 450px;
+    cursor: pointer;
+    &::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        opacity: 0.8;
+    }
+    &:hover:after{
+        opacity: 0;
+        transition: .5s;
+    }
+    &:nth-child(1){
+        background-image: url(../../public/images/pic01.jpg);
+        background-size: cover;
+        width: 40%;
+        &::after{
+            background: lightblue;
+        }
+    }
+    &:nth-child(2){
+        background-image: url(../../public/images/pic02.jpg);
+        background-size: cover;
+        width: 60%;
+        &::after{
+            background: plum;
+        }
+    }
+    &:nth-child(3){
+        background-image: url(../../public/images/pic03.jpg);
+        background-size: cover;
+        width: 60%;
+        &::after{
+            background: lightpink;
+        }
+    }
+    &:nth-child(4){
+        background-image: url(../../public/images/pic04.jpg);
+        background-size: cover;
+        width: 40%;
+        &::after{
+            background: orange;
+        }
+    }
+    &:nth-child(5){
+        background-image: url(../../public/images/pic05.jpg);
+        background-size: cover;
+        width: 40%;
+        &::after{
+            background: rgb(43, 133, 236);
+        }
+    }
+    &:nth-child(6){
+        background-image: url(../../public/images/pic06.jpg);
+        background-size: cover;
+        width: 60%;
+        &::after{
+            background: rgb(29, 233, 90);
+        }
+    }
+    .content-text{
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+.bottom-baner{
+    padding: 2% 2% 10% 7%;
+    color: $textColor;
+    background: $bgColor;
+    .content-text{
+        width: 95%;
+        padding: 0px;
+    }
+    .button{
+        display: inline-block;
+        cursor: pointer;
+        margin: 3% 0 0 0;
+        padding: 10px 30px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        color: $textColor;
+        font-weight: bold;
+        border: 2px solid $textColor;
+        &:hover{
+            transition: .3s;
+            color: $hoverColor;
+            border-color: $hoverColor;
+        }
+    }
+}
+.form{
+    @include flex(row, flex-start, flex-start, wrap);
+    background: rgb(32, 35, 56);
+    padding-left: 7%;
+    height: auto;
+    border-bottom: 1.5px solid $bgColor;
+    .content-text{
+        margin-bottom: 2%;
+    }
+    
+    .form-input{
+        @include flex(row, flex-start, flex-start, wrap);
+        @include list();
+        width: 55%;
+        padding: 0 5% 0 0;
+    }
+    .form-input--li:first-child{
+        padding-right: 25px;
+    }
+    .form-input--li{
+        width: 50%;
+        padding: 5% 0 5% 0;
+    }
+    .form-input--li:nth-child(3){
+        width: 100%;
+        padding: 0;
+        position: relative;
+    }
+    .input--name{
+        background: $bgColor;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        color: $textColor;
+        padding-left: 1em;
+        border: none;
+        &:focus{
+            border: 1px solid $hoverColor;
+        }
+    }
+    .input--message{
+        background: $bgColor;
+        width: 100%;
+        height: 150px;
+        border: none;
+        font-size: 20px;
+        color: $textColor;
+        padding: 1em;
+        &:focus{
+            border: 1px solid $hoverColor;
+        }
+    }
+    .button{
+        display: inline-block;
+        cursor: pointer;
+        margin: 3% 2% 0 0;
+        padding: 10px 30px;
+        letter-spacing: 3px;
+        font-size: 16px;
+        color: $bgColor;
+        font-weight: bold;
+        border: 2px solid $textColor;
+        background: $textColor;
+        &:hover{
+            transition: .3s;
+            color: $bgColor;
+            background: $hoverColor;
+            border-color: $hoverColor;
+            font-weight: bold;
+        }
+    }
+    .button:nth-child(5){
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 16px;
+        font-weight: bold;
+        background: none;
+        color: $textColor;
+        &:hover{
+            transition: .3s;
+            color: $hoverColor;
+        }
+    }
+}
+.form-address{
+    @include flex(column, flex-start, flex-start, nowrap);
+    @include list();
+    width: 45%;
+    padding: 0;
+    .h2-text{
+        font-size: 24px;
+        border: none;
+        letter-spacing: 1px;
+    }
+}
+.form-address-li{
+    position: relative;
+    width: 100%;
+    padding: 2% 5% 5% 20%;
+    border: 1.5px solid $bgColor;
+    border-top: none;
+    .content-text{
+        width: 70%;
+        padding-bottom: 0;
+    }
+    &:first-child{
+        .content-text{
+            width: auto;
+            cursor: pointer;
+            border-bottom: 1px dotted $textColor;
+            &:hover{
+                transition: .3s;
+                color: $hoverColor;
+                border-bottom: 1px dotted transparent;
+            }
+        }
+    }
+    &:last-child{
+        border-bottom: none;
+    }
+    &:before{
+        position: absolute;
+        top: 15%;
+        left: 7%;
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        color: rgb(32, 35, 56);
+        font-size: 1.1em;
+        width: 2.3em;
+        line-height: 2.3em;
+        background: #ffffff;
+        border-radius: 100%;
+        text-align: center;
+    }
+    &:nth-child(1):before{
+        content: "\f0e0";
+    }
+    &:nth-child(2):before{
+        content: "\f095";
+    }
+    &:nth-child(3):before{
+        content: "\f015";
+    }
+}

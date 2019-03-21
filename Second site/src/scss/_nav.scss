@@ -1,0 +1,39 @@
+.menu{
+    height: 100%;
+    @include flex(column, center, flex-end, nowrap);
+    @include list();
+    .menu-li{
+        position: relative;
+        margin: 0px;
+        padding: 25px 0 0 0;
+        width: 100%;
+        &::after{
+            content: "";
+            height: 2px;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background: rgba(211, 211, 211, 0.082);
+        }
+        &:hover::after{
+            border-bottom: 2px solid transparent; 
+            border-image: linear-gradient(to right, rgb(107, 0, 107) 0%, violet 100%);  
+            border-image-slice: 1;
+            background: none;
+            transition: 0.1s;
+        }  
+        text-align: right;  
+        cursor: pointer;
+        &:hover .button{
+            color: $hoverButton;
+            transition: 0.2s;
+        }     
+        .button{
+            display: inline-block;
+            letter-spacing: $letterSpaceButton;
+            padding: 10px 0;
+            color: $notActiveButton;
+        }
+    }
+}
