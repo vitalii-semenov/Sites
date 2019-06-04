@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    @include flex(column, flex-start, center, wrap);
+    background-image: url(../../public/images/Layer\ 30.png);
+    background-color: rgb(58, 78, 106);
+    background-blend-mode: lighten;
+    background-size: cover;
+    padding-top: 100px;
+}
+  
+.contact_info{
+    @include flex(column, center, center, wrap);
+}
+
+.contact_text-call {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-family: $fontHeader;
+    color: $fontColorHeader;
+    text-transform: uppercase;
+    line-height: 0.5;
+    text-align: center;
+}
+  
+.contact_text-address {
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: $fontText;
+    color: $fontColorMain;
+    line-height: 1.333;
+}
+.contact_text-send {
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: $fontHeader;
+    color: $fontColorHeader;
+    text-transform: uppercase;
+}
+
+.contact_social{
+    @include flex(row, center, center, nowrap);
+    @include list();
+    margin-bottom: 30px;
+}
+
+.contact_social-list {
+    margin-right: 10px;
+}
+.facebook-icon::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../../public/images/facebook.svg);
+    background-size: 1em 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(83, 120, 188);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.twitter-icon::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../../public/images/twitter.svg);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(54, 208, 247);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.linkedin-icon::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../../public/images/linkedin.svg);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(0, 122, 181);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.pinterest-icon::after {
+    display: inline-block;
+    content: '';
+    background-image: url(../../public/images/pinterest.svg);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgb(233, 42, 42);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.contact_text-help {
+    font-family: $fontText;
+    font-size: 14px;
+    color: $fontColorMain;
+    font-style: italic;
+    line-height: 1.714;
+    text-align: center;
+    width: 770px;
+}
+
+#form_send {
+    @include flex(row, center, center, wrap);
+    width: 770px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.form_input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.form_send-info{
+    margin-right: 15px;
+    width: 48%;
+    height: 100%;
+}
+
+#form_message {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 48%;
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+}
+
+.button-main {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(93, 189, 177);
+    width: 170px;
+    height: 45px;
+    font-size: 16px;
+    font-family: $fontText;
+    color: $fontColorMain;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.m-top {
+    margin-top: 25px;
+}
+
+.line {
+    z-index: 223232;
+    background-image: url(../../public/images/line.png);
+    opacity: 0.702;
+    width: 881px;
+    height: 2px;
+
+}
+
+.footer_tm {
+    margin-top: 30px;
+    font-size: 13px;
+    font-family: $fontText;
+    color: $fontColorMain;
+    line-height: 1.846;
+    text-align: center;
+}
+  
+.footer_arrow {
+    cursor: pointer;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    background-image: url(../../public/images/Arrow\ copy\ 4.png);
+    width: 15px;
+    height: 20px;
+}
